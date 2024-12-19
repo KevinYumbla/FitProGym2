@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitPro Gym - Membership</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header>
+  <nav>
+
+    <div style="display: flex; align-items: center;">
+        <img src="header.jpg" alt="FitPro Gym Logo" style="height: 50px; margin-right: 10px;">
+        <span style="color: #ff9900; font-size: 24px; font-weight: bold;">FitPro Gym</span>
+    </div>
+
+    <!-- Navigation Links -->
+    <ul>
+      <li><a href="index.html">About Us</a></li>
+      <li><a href="membership.html">Our Memberships</a></li>
+      <li><a href="equipment.html">Our Equipment</a></li>
+    </ul>
+  </nav>
+</header>
+  <main>
+<div class="container">
+<h1>Find the Perfect Plan for You</h1>
+<p>We offer flexible membership plans to suit your fitness needs and schedule. Whether you’re just starting out or a seasoned athlete, we have something for everyone. Here are our options:</p>
+<div class="grid">
+<div class="grid-item">
+<img src="7xnvkexl.png" alt="Monthly">
+<h2>Monthly Membership - $50:</h2> 
+<p>Enjoy full access to our gym facilities and classes with no long-term commitment.</p>
+</div>
+<div class="grid-item">
+<img src="25j93wf.png" alt="Annual">
+<h2>Annual Membership - $500:</h2> 
+<p>Commit to your fitness journey and save with our discounted yearly plan.</p>
+</div>
+<div class="grid-item">
+<img src="rrppaus8.png" alt="Student">
+<h2>Student Membership - $30/month:</h2>
+<p>Special discounted rates for students with a valid ID.</p>
+</div>
+<div class="grid-item">
+<img src="40svfnr4.png" alt= "Family">
+<h2>Family Membership - $150/month:</h2> 
+<p>Bring your family along! Includes memberships for up to 4 people.</p>
+</div>
+</div>
+</div>
+    <h2>How to Register</h2>
+    <p>Signing up is simple! Follow these steps:</p>
+    <ol>
+      <li>Visit our front desk at the gym or complete our online registration form down below.</li>
+      <li>Select your preferred membership plan.</li>
+      <li>Provide your payment details and personal information.</li>
+      <li>Start your fitness journey with FitPro Gym!</li>
+</ol>
+ 
+<section id="paySection">
+
+    <h2>Membership Form</h2>
+    <form action="paysubmit.html">
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" name="fullName" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="membershipType">Membership Type:</label>
+      <select id="membershipType" name="membershipType" required>
+        <option value="">""</option>
+        <option value="month">Monthly Membership - $50</option>
+        <option value="annually">Annual Membership - $500</option>
+        <option value="student">Student Membership - $30</option>
+        <option value="family">Family Membership - $150</option>
+      </select>
+
+<label>Credit Card*</label>
+            <fieldset id="cards">
+               <label class="cardLabel">
+                  <input name="credit" value="amex" type="radio" required />               
+                  <span>American Express</span>
+               </label>
+               <label class="cardLabel">               
+                  <input name="credit" value="discover" type="radio" />
+                  <span>Discover</span>
+               </label>
+               <label class="cardLabel">                              
+                  <input name="credit" value="master" type="radio"  />
+                  <span>MasterCard</span>
+               </label>
+               <label class="cardLabel">                                    
+                  <input name="credit" value="visa" type="radio"  />
+                  <span>Visa</span>
+               </label>
+            </fieldset> 
+
+<label for="cardNumber">Credit Card Number</label>
+            <input name="cardNumber" id="cardNumber" required type="text"
+                   pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$"/>
+
+      <label for="expMonth">Expiration Month</label>
+            <select id="expMonth" name="expMonth">
+               <option value="mm">MM</option>
+               <option value="01">01</option>
+               <option value="02">02</option>
+               <option value="03">03</option>
+               <option value="04">04</option>
+               <option value="05">05</option>
+               <option value="06">06</option>
+               <option value="07">07</option>
+               <option value="08">08</option>
+               <option value="09">09</option>
+               <option value="10">10</option>
+               <option value="11">11</option>
+               <option value="12">12</option>
+            </select>
+            <span id="separator">Expiration Year </span>
+            <select id="expYear" name="expYear">
+               <option value="mm">YYYY</option>
+               <option value="2022">2022</option>
+               <option value="2023">2023</option>
+               <option value="2024">2024</option>
+               <option value="2025">2025</option>
+               <option value="2026">2026</option>
+            </select>            
+
+            <label for="cvc">CVC</label>
+            <input name="cvc" id="cvc" required pattern="^\d{3,4}$" type="text"/>
+      <button type="submit" id="subButton" value="Submit Payment">Join Now</button>
+    </form>
+</section>
+  </main>
+     <footer class="footer">
+    <div class="footer-container">
+      <!-- Logo and Description -->
+      <div class="footer-section">
+        <h3 class="footer-logo">FitPro Gym</h3>
+        <p>Transform your fitness journey with FitPro Gym. State-of-the-art equipment, professional trainers, and a supportive community to help you achieve your goals.</p>
+      </div>
+      
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html" >About Us</a></li>
+          <li><a href="membership.html">Our Memberships</a></li>
+          <li><a href="equipment.html">Our Equipment</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="footer-section">
+        <h4>Contact Us</h4>
+        <p>📞 <a href="tel:+1234567890">+1 234-567-890</a></p>
+        <p>📧 <a href="mailto:info@fitprogym.com">info@fitprogym.com</a></p>
+        <p>📍 123 Fitness Ave, Health City, TX 12345</p>
+      </div>
+</div>
+    
+    <!-- Copyright and Social Media -->
+    <div class="footer-bottom">
+      <p>&copy; 2024 FitPro Gym. All Rights Reserved.</p>
+      <div class="social-links">
+        <a href="https://facebook.com/fitprogym" target="_blank">Facebook</a>
+        <a href="https://instagram.com/fitprogym" target="_blank">Instagram</a>
+        <a href="https://twitter.com/fitprogym" target="_blank">Twitter</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
